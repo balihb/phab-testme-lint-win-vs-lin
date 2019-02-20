@@ -1,0 +1,14 @@
+{
+    "linters": {
+        "yamllint": {
+            "type": "script-and-regex",
+            "script-and-regex.script": "\".arctools/yamllint\" \"config/yamllint.yml\"",
+            "script-and-regex.regex": "(^((?P<file>.+):(?P<line>\\d+):(?P<col>\\d+): \\[(?P<severity>.+)\\] (?P<message>.+) \\((?P<name>.+)\\))$)m",
+            "include": [
+                "(\\.yaml$)",
+                "(\\.yml$)"
+            ]
+
+        }
+    }
+}

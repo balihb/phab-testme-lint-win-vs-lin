@@ -1,0 +1,23 @@
+---
+# https://yamllint.readthedocs.io/en/stable/
+#
+# To install on Ubuntu:
+# sudo apt-get install python3-setuptools python3-pkg-resources python3-wheel python3-pip
+# sudo pip3 install yamllint
+
+ignore: |
+  .*
+  node_modules/
+  build/
+  bin/
+
+extends: default
+
+rules:
+  line-length:
+    max: 120
+    level: warning
+  document-start:
+    level: error
+  truthy:
+    level: error
