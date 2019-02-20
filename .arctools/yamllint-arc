@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# https://pypi.org/project/yamllint/
+# install:
+# pip3 install yamllint
+
+yamllint -f parsable -c "$1" "$2" 2>&1

@@ -1,9 +1,0 @@
-#!/bin/sh
-
-# https://pypi.org/project/yamllint/
-# install:
-# pip3 install yamllint
-
-echo linting "$1" "$2" >> linting.txt
-
-yamllint -f parsable -c "$1" "$2" 2>&1 || true
